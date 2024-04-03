@@ -25,6 +25,7 @@ public class Main {
                         exit=true;
                         break;
                     }
+                    break;
                 default:
                     System.out.println("Wrong Input.....");
             }

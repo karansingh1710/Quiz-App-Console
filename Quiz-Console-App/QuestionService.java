@@ -5,7 +5,7 @@ public class QuestionService {
     Scanner sc=new Scanner(System.in);
     ArrayList<Question> questions=new ArrayList<>();
     ArrayList<String> selection=new ArrayList<>();
-    int score;
+
     public QuestionService() {
         questions.add(new Question(1,"What is the size of int?","4","2","8","10","4"));
         questions.add(new Question(2,"Which of the following is not a primitive data type in most programming languages?","Integer","String","Array","Boolean","Array"));
@@ -40,6 +40,7 @@ public class QuestionService {
    }
 
    public void calculateScore(){
+        int score=0;
         int i=0;
         for (Question q:questions){
            if (q.getAns().equals(selection.get(i++))) score++;
